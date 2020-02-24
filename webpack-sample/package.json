@@ -6,6 +6,7 @@
     "scripts": {
         "start": "webpack-dev-server",
         "build": "webpack",
+        "lib1": "webpack --config webpack.config.lib1.js",
         "lib": "webpack --config webpack.config.lib.js"
     },
     "keywords": [],

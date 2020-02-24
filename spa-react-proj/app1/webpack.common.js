@@ -36,7 +36,8 @@ module.exports = {
         filename: '[name].1.js',//命名文件
         path: path.resolve(__dirname, './dist'),//生成的位置
         // libraryTarget: 'system'
-        libraryTarget: 'umd'
+        libraryTarget: 'amd',
+        library:'app1'
     },
 
     plugins: [

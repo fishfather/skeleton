@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{4:function(n,o,t){"use strict";function s(){console.log("test1 function from async.js")}t.r(o),t.d(o,"test1",(function(){return s}))}}]);

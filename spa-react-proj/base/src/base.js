@@ -6,8 +6,15 @@ import * as singleSpa from 'single-spa';
 // const store = createStore(combineReducers({testData:(state, action)=>{return ['Sam1','Jack1','Johdan1']}}));
 // const store = createStore(combineReducers({testData:users}));
 
-let version = 1
+let version = 2
 console.log('spa root application init ...',version)
+
+// let app1=SystemJS.import('./app.1.js');
+// console.log('app1 is:',app1)
+// app1.then(m => {
+//     console.log("returned app1")
+//     console.log("the rtn m is:",m)
+// });
 
 // const app1Store = {};
 const sharedObj = {test:'111',store:{}};
