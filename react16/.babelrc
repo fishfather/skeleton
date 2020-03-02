@@ -1,0 +1,16 @@
+//.babelrc
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-proposal-decorators",    //support decorator
+            {
+                "legacy": true
+            }
+        ],
+        "@babel/plugin-proposal-class-properties"   //support array function in class
+    ]
+}
