@@ -4,6 +4,9 @@
         <title>react demo</title>
     </head>
     <body>
+        <% if(htmlWebpackPlugin.options.isDll) {%>
+            <script src="<%= htmlWebpackPlugin.options.vendor %>"></script>
+        <% } %>
         <div id="root"></div>
     </body>
 </html>

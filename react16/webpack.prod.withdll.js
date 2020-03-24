@@ -1,6 +1,7 @@
 //webpack.common.js
 const path = require('path'); //路径的api
 const HtmlWebpackPlugin = require('html-webpack-plugin');//引用html-webpack-plugin
+const manifest = require('./dist/dll/manifest.json')  //get vendor hash
 
 module.exports = {
     mode: 'production',
@@ -34,6 +35,9 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',//指定的html模板，这个会自动帮我引用下面output出口设置的文件名。
+            filename: 'index.html',
+            isDll: true,
+            vendor: './dll/' + manifest.name + '.js' //manifest就是dll生成的json
         })
     ],
 }
