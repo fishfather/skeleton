@@ -1,5 +1,5 @@
 import urllib.request
-from bs4 import BeautifulSoup
+from lxml import etree
 
 class ZhuatuSpider(object):
     url = 'https://lt.cjdby.net/forum-77-1.html'
@@ -11,15 +11,17 @@ class ZhuatuSpider(object):
         # print('start run {}'.format(ZhuatuSpider.url))
         response = urllib.request.urlopen(url=ZhuatuSpider.url)
         content = response.read().decode('gbk')
-        soup = BeautifulSoup(content, 'lxml')
-        list = soup.find_all('a', class_="s xst")
+        
+        tree = etree.HTML(content)
+        list = tree.xpath('//a[@class = "s xst"]')
+
         for item in list:
             print(item.text)
 
         print(len(list))
 
 def main():
-    print('s')
+    print('xpath start')
     spider = ZhuatuSpider()
     spider.run()
 

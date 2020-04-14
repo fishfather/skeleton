@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Peggy1",
+        "email": "peggy@gmail.com",
+        "homepage": "//www.jb51.net",
+        "intes":["book","sing"]
+    },
+    {
+        "name": "Peggy2",
+        "email": "peggy@gmail.com",
+        "homepage": "//www.jb51.net",
+        "intes":["book2","sing2"]
+    },
+    {
+        "name": "Peggy3",
+        "email": "peggy@gmail.com",
+        "homepage": "//www.jb51.net",
+        "others": {
+            "name" : "v1",
+            "age" : 18
+        }
+    }
+]
